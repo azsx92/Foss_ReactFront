@@ -2,37 +2,75 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  padding: 20px;
+  font-size: calc(10px + 1vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.token-section, .auth-section, .logged-in-section {
+  width: 90%;
+  max-width: 500px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #3a3f4b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #4fa8c9;
+}
+
+.token-display {
+  background-color: #2a2e37;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  word-break: break-all;
+}
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  margin: 15px 0;
+}
+
+.schedule-form input, 
+.schedule-form button {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
